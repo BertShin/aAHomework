@@ -11,4 +11,4 @@ I was able to complete:
 
   1) CSS Advanced Selectors Exercise
   2) Execution Time and Differences/Algorithms
-  3) Partial Anagrams
+  3) Anagrams

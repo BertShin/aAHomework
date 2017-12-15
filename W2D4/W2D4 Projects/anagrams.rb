@@ -44,3 +44,39 @@ def second_anagram?(str1, str2)
 
   letters2.empty?
 end
+
+
+# Write a method #third_anagram? that solves the problem by sorting both
+# strings alphabetically. The strings are then anagrams if and only if
+# the sorted versions are the identical.
+# What is the time complexity of this solution?
+# Is it better or worse than #second_anagram??
+
+def third_anagram?(str1, str2)
+  letters1 = str1.chars.sort
+  letters2 = str2.chars.sort
+  return false if letters1 != letters2
+  true
+end
+
+# Write one more method #fourth_anagram?. This time, use two Hashes to
+# store the number of times each letter appears in both words.
+# Compare the resulting hashes.
+# What is the time complexity?
+# Bonus: Do it with only one hash.
+
+def fourth_anagram?(str1, str2)
+  hash1 = Hash.new { |h, k| h[k] = 0 }
+  hash2 = Hash.new { |h, k| h[k] = 0 }
+
+  str1.chars.each do |char|
+    hash1[char] += 1
+  end
+
+  str2.chars.each do |char|
+    hash2[char] += 1
+  end
+
+  return true if hash1 == hash2
+  false
+end
