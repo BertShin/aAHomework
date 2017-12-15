@@ -6,11 +6,14 @@ class LRUCache
   end
 
   def count
-    cache.count
+    @cache.count
   end
 
   def add(el)
-    if @cache.count == @size
+    if @cache.include?(el)
+      @cache.delete(el)
+      @cache << el
+    elsif @cache.count >= @size
       @cache.shift
       @cache << el
     else
@@ -19,7 +22,7 @@ class LRUCache
   end
 
   def show
-    @cache
+    p @cache
   end
 
 end
