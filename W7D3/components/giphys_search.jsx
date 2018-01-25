@@ -12,7 +12,7 @@ class GiphysSearch extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchSearchGiphys('');
+    this.props.fetchSearchGiphys('american+eskimo');
   }
 
   handleChange(e) {

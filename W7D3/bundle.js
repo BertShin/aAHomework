@@ -12243,7 +12243,7 @@ var GiphysSearch = function (_React$Component) {
   _createClass(GiphysSearch, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      this.props.fetchSearchGiphys('');
+      this.props.fetchSearchGiphys('american+eskimo');
     }
   }, {
     key: 'handleChange',
@@ -12427,7 +12427,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 var fetchSearchGiphys = exports.fetchSearchGiphys = function fetchSearchGiphys(searchTerm) {
   return $.ajax({
-    url: 'http://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=dc6zaTOxFJmzC&limit=2',
+    url: 'http://api.giphy.com/v1/gifs/search?q=' + searchTerm + '&api_key=dc6zaTOxFJmzC&limit=25',
     method: 'GET'
   });
 };
