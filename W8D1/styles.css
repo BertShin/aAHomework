@@ -1,0 +1,62 @@
+html, body {
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     background-image: url('splash.jpg');
+   }
+.main{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 4px solid black;
+  padding: 15px;
+}
+
+.main-logo {
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: flex-start;
+  align-self: center;
+}
+
+.user-signup {
+  position: relative;
+  margin-left: 60%;
+  margin-top: 20%;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  background: white;
+  padding: 50px;
+  width: 400px;
+}
+
+.user-signup a {
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info {
+  justify-content: flex-end;
+  align-self: center;
+}
+
+.foot {
+  display: flex;
+  background: white;
+  padding: 20px;
+  margin-top: 40%;
+  justify-content: flex-end;
+}
+
+.foot a {
+  padding: 20px;
+}
